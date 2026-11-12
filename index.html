@@ -1,0 +1,619 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#081426">
+
+    <title>وَعْي | WA3Y - منصة الوعي الرقمي</title>
+
+    <meta name="description" content="منصة وَعْي للتوعية بالأمن الرقمي والخصوصية والتصيد الإلكتروني والأخبار المضللة.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header-content">
+
+            <button class="brand" type="button" data-page="home" aria-label="العودة للرئيسية">
+                <span class="brand-icon">و</span>
+                <span class="brand-name">
+                    وَعْي
+                    <small>WA3Y</small>
+                </span>
+            </button>
+
+            <button
+                class="menu-toggle"
+                id="menuToggle"
+                type="button"
+                aria-label="فتح القائمة"
+                aria-expanded="false"
+                aria-controls="mainNav"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="main-nav" id="mainNav" aria-label="القائمة الرئيسية">
+                <button class="nav-link active" data-page="home" type="button">الرئيسية</button>
+                <button class="nav-link" data-page="dashboard" type="button">لوحة التحكم</button>
+                <button class="nav-link" data-page="academy" type="button">الأكاديمية</button>
+                <button class="nav-link" data-page="lab" type="button">المختبر</button>
+                <button class="nav-link" data-page="privacy" type="button">الخصوصية</button>
+                <button class="nav-link" data-page="factcheck" type="button">فحص الأخبار</button>
+            </nav>
+
+            <button class="lang-toggle" id="langToggle" type="button" aria-label="تغيير لغة القائمة">
+                EN
+            </button>
+
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- HOME -->
+        <section class="page active" id="home">
+            <div class="container">
+
+                <div class="hero">
+                    <div class="hero-content">
+
+                        <span class="section-tag">
+                            مستقبلك الرقمي يبدأ بوعيك
+                        </span>
+
+                        <h1>
+                            كن واعيًا...
+                            <span>كن آمنًا</span>
+                        </h1>
+
+                        <p>
+                            عالم الإنترنت مليء بالفرص، لكنه يحمل مخاطر
+                            تحتاج إلى الوعي والمعرفة.
+                            اكتشف كيف تحمي بياناتك وهويتك الرقمية
+                            وتتعامل بذكاء مع التهديدات الإلكترونية.
+                        </p>
+
+                        <div class="hero-actions">
+                            <button class="btn btn-primary" type="button" data-page="academy">
+                                ابدأ رحلتك
+                            </button>
+
+                            <button class="btn btn-secondary" type="button" data-page="dashboard">
+                                متابعة التقدم
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="hero-visual" aria-hidden="true">
+                        <div class="hero-circle">
+                            <div class="shield-icon">◈</div>
+                            <span>WA3Y</span>
+                            <small>Digital Awareness</small>
+                        </div>
+                    </div>
+                </div>
+
+
+                <section class="features-section">
+                    <div class="section-heading">
+                        <span class="section-tag">اكتشف المنصة</span>
+                        <h2>وعيك هو خط دفاعك الأول</h2>
+                        <p>
+                            أدوات تعليمية وتفاعلية تساعدك على بناء
+                            حياة رقمية أكثر أمانًا.
+                        </p>
+                    </div>
+
+                    <div class="features-grid">
+
+                        <article class="feature-card">
+                            <div class="feature-icon">◈</div>
+                            <h3>أكاديمية الوعي</h3>
+                            <p>
+                                تعلم أساسيات الأمن الرقمي من خلال
+                                دروس مبسطة واختبارات تفاعلية.
+                            </p>
+                            <button class="card-link" data-page="academy" type="button">
+                                اكتشف الأكاديمية
+                            </button>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon">⌘</div>
+                            <h3>المختبر الرقمي</h3>
+                            <p>
+                                اختبر قدرتك على اكتشاف رسائل التصيد
+                                الإلكتروني من خلال محاكاة عملية.
+                            </p>
+                            <button class="card-link" data-page="lab" type="button">
+                                ادخل المختبر
+                            </button>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon">◉</div>
+                            <h3>حماية الخصوصية</h3>
+                            <p>
+                                تعرّف على طرق حماية حساباتك
+                                وقيّم كلمة مرور تجريبية.
+                            </p>
+                            <button class="card-link" data-page="privacy" type="button">
+                                احمِ حساباتك
+                            </button>
+                        </article>
+
+                        <article class="feature-card">
+                            <div class="feature-icon">◎</div>
+                            <h3>تحقق من الأخبار</h3>
+                            <p>
+                                تعلم كيف تميز المعلومات المضللة
+                                وتتحقق من مصادر الأخبار.
+                            </p>
+                            <button class="card-link" data-page="factcheck" type="button">
+                                ابدأ التحقق
+                            </button>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+        </section>
+
+
+        <!-- DASHBOARD -->
+        <section class="page" id="dashboard">
+            <div class="container">
+
+                <div class="page-heading">
+                    <span class="section-tag">رحلتك الرقمية</span>
+                    <h1>لوحة التحكم</h1>
+                    <p>تابع إنجازاتك وتقدمك في رحلة الوعي الرقمي.</p>
+                </div>
+
+                <div class="stats-grid">
+
+                    <article class="stat-card">
+                        <span class="stat-icon">▣</span>
+                        <h3 id="lessonsStat">0</h3>
+                        <p>الدروس المكتملة</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-icon">✦</span>
+                        <h3 id="pointsStat">0</h3>
+                        <p>النقاط المكتسبة</p>
+                    </article>
+
+                    <article class="stat-card">
+                        <span class="stat-icon">✓</span>
+                        <h3 id="quizStat">0</h3>
+                        <p>الاختبارات المكتملة</p>
+                    </article>
+
+                </div>
+
+                <div class="progress-card">
+                    <div class="progress-header">
+                        <div>
+                            <h3>مستوى تقدمك</h3>
+                            <p>استمر في التعلم للوصول إلى هدفك.</p>
+                        </div>
+                        <strong id="progressLabel">0%</strong>
+                    </div>
+
+                    <div
+                        class="progress-track"
+                        role="progressbar"
+                        aria-label="نسبة إكمال الدروس"
+                        aria-valuemin="0"
+                        aria-valuemax="100"
+                        aria-valuenow="0"
+                        id="progressTrack"
+                    >
+                        <div class="progress-bar" id="progressBar"></div>
+                    </div>
+                </div>
+
+                <div class="dashboard-action">
+                    <h3>جاهز للخطوة التالية؟</h3>
+                    <p>أكمل دروس الأكاديمية لزيادة معرفتك ونقاطك.</p>
+
+                    <button class="btn btn-primary" data-page="academy" type="button">
+                        متابعة التعلم
+                    </button>
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ACADEMY -->
+        <section class="page" id="academy">
+            <div class="container">
+
+                <div class="page-heading">
+                    <span class="section-tag">تعلم وتطور</span>
+                    <h1>أكاديمية الوعي الرقمي</h1>
+                    <p>
+                        ستة دروس تساعدك على فهم المخاطر الرقمية
+                        وحماية نفسك على الإنترنت.
+                    </p>
+                </div>
+
+                <div class="academy-progress">
+                    <span>الدروس المكتملة</span>
+                    <strong id="academyCompleted">0 / 6</strong>
+                </div>
+
+                <div class="lessons-grid">
+
+                    <article class="lesson-card">
+                        <span class="lesson-number">01</span>
+                        <span class="lesson-icon">◈</span>
+                        <h3>مقدمة في الأمن الرقمي</h3>
+                        <p>تعرف على مفهوم الأمن الرقمي وأهميته في حياتنا اليومية.</p>
+                        <button class="lesson-btn" data-lesson="0" type="button">ابدأ الدرس</button>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="lesson-number">02</span>
+                        <span class="lesson-icon">⌘</span>
+                        <h3>التصيد الإلكتروني</h3>
+                        <p>اكتشف أساليب الاحتيال الإلكتروني وكيفية تجنبها.</p>
+                        <button class="lesson-btn" data-lesson="1" type="button">ابدأ الدرس</button>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="lesson-number">03</span>
+                        <span class="lesson-icon">▣</span>
+                        <h3>كلمات المرور الآمنة</h3>
+                        <p>تعلم إنشاء كلمات مرور قوية وحماية حساباتك.</p>
+                        <button class="lesson-btn" data-lesson="2" type="button">ابدأ الدرس</button>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="lesson-number">04</span>
+                        <span class="lesson-icon">◉</span>
+                        <h3>الخصوصية الرقمية</h3>
+                        <p>افهم أهمية بياناتك الشخصية وكيفية حمايتها.</p>
+                        <button class="lesson-btn" data-lesson="3" type="button">ابدأ الدرس</button>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="lesson-number">05</span>
+                        <span class="lesson-icon">◎</span>
+                        <h3>الأخبار المضللة</h3>
+                        <p>تعلم التحقق من المعلومات وتمييز الأخبار المزيفة.</p>
+                        <button class="lesson-btn" data-lesson="4" type="button">ابدأ الدرس</button>
+                    </article>
+
+                    <article class="lesson-card">
+                        <span class="lesson-number">06</span>
+                        <span class="lesson-icon">✦</span>
+                        <h3>الأمان على الإنترنت</h3>
+                        <p>اكتسب عادات رقمية آمنة لحماية نفسك وأجهزتك.</p>
+                        <button class="lesson-btn" data-lesson="5" type="button">ابدأ الدرس</button>
+                    </article>
+
+                </div>
+
+
+                <!-- LESSON VIEWER -->
+                <div class="lesson-viewer" id="lessonViewer" hidden>
+
+                    <div class="lesson-viewer-header">
+                        <div>
+                            <span id="lessonLevel">الدرس الأول</span>
+                            <h2 id="lessonTitle">عنوان الدرس</h2>
+                        </div>
+
+                        <button
+                            class="close-lesson"
+                            id="closeLesson"
+                            type="button"
+                            aria-label="إغلاق الدرس"
+                        >×</button>
+                    </div>
+
+                    <div class="lesson-content" id="lessonContent"></div>
+
+                    <div class="lesson-quiz" id="lessonQuiz">
+                        <div class="quiz-heading">
+                            <span class="section-tag">اختبر معلوماتك</span>
+                            <h3>سؤال سريع</h3>
+                        </div>
+
+                        <p id="quizQuestion"></p>
+                        <div id="quizOptions"></div>
+
+                        <div id="quizFeedback" aria-live="polite" hidden></div>
+
+                        <button class="btn btn-primary" id="submitQuiz" type="button">
+                            تحقق من الإجابة
+                        </button>
+                    </div>
+
+                    <button class="btn btn-secondary" id="nextLesson" type="button" hidden>
+                        الدرس التالي
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CYBER LAB -->
+        <section class="page" id="lab">
+            <div class="container">
+
+                <div class="page-heading">
+                    <span class="section-tag">تجربة تفاعلية</span>
+                    <h1>مختبر التصيد الإلكتروني</h1>
+                    <p>
+                        هل تستطيع اكتشاف الرسائل الاحتيالية؟
+                        اختبر مهاراتك في مواقف تحاكي الواقع.
+                    </p>
+                </div>
+
+                <div class="lab-card">
+
+                    <div class="lab-top">
+                        <span class="lab-status">محاكاة تعليمية</span>
+                        <span id="scenarioCount">السيناريو 1 من 3</span>
+                    </div>
+
+                    <div class="email-preview">
+
+                        <div class="email-header">
+                            <span class="email-icon">✉</span>
+                            <div>
+                                <strong>رسالة واردة</strong>
+                                <small>افحص الرسالة قبل اتخاذ القرار</small>
+                            </div>
+                        </div>
+
+                        <div class="email-field">
+                            <span>الموضوع:</span>
+                            <strong id="mailSubject"></strong>
+                        </div>
+
+                        <div class="email-message" id="mailText"></div>
+
+                    </div>
+
+                    <div class="phishing-question">
+                        <h3>ما تقييمك لهذه الرسالة؟</h3>
+                        <p>هل تعتقد أنها رسالة احتيالية؟</p>
+
+                        <div class="phishing-actions">
+                            <button class="btn btn-danger" id="phishYes" type="button">
+                                نعم، رسالة احتيالية
+                            </button>
+
+                            <button class="btn btn-secondary" id="phishNo" type="button">
+                                لا، رسالة آمنة
+                            </button>
+                        </div>
+                    </div>
+
+                    <div id="phishFeedback" aria-live="polite" hidden></div>
+
+                    <button class="btn btn-primary" id="nextScenario" type="button" hidden>
+                        السيناريو التالي
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- PRIVACY -->
+        <section class="page" id="privacy">
+            <div class="container">
+
+                <div class="page-heading">
+                    <span class="section-tag">حماية بياناتك</span>
+                    <h1>فاحص كلمات المرور</h1>
+                    <p>
+                        جرّب كلمة مرور غير حقيقية وتعرف على
+                        بعض العوامل التي تجعلها أصعب في التخمين.
+                    </p>
+                </div>
+
+                <div class="password-card">
+
+                    <div class="password-card-heading">
+                        <span class="feature-icon">▣</span>
+                        <h2>اختبر كلمة مرور تجريبية</h2>
+                        <p>
+                            لا تدخل كلمة مرور تستخدمها في أي حساب حقيقي.
+                            الفحص يتم داخل متصفحك ولا يتم إرسال النص إلى خادم.
+                        </p>
+                    </div>
+
+                    <label for="passwordInput">أدخل كلمة مرور تجريبية</label>
+
+                    <div class="password-input-wrap">
+                        <input
+                            type="password"
+                            id="passwordInput"
+                            placeholder="اكتب كلمة مرور تجريبية..."
+                            autocomplete="off"
+                            autocapitalize="off"
+                            spellcheck="false"
+                            maxlength="128"
+                            aria-describedby="passwordNotice"
+                        >
+
+                        <button
+                            type="button"
+                            class="password-toggle"
+                            id="passwordToggle"
+                            aria-label="إظهار كلمة المرور"
+                            aria-pressed="false"
+                        >إظهار</button>
+                    </div>
+
+                    <p class="password-notice" id="passwordNotice">
+                        هذا الفاحص تعليمي وتقريبي، ولا يضمن أن كلمة المرور آمنة فعليًا.
+                    </p>
+
+                    <div class="strength-info">
+                        <div class="strength-track">
+                            <div class="strength-bar" id="strengthBar"></div>
+                        </div>
+                        <span id="strengthLabel" aria-live="polite">لم يتم الفحص بعد</span>
+                    </div>
+
+                    <div class="password-requirements">
+                        <h3>عوامل تساعد على إنشاء كلمة مرور قوية</h3>
+
+                        <ul>
+                            <li data-check="length">12 حرفًا أو أكثر</li>
+                            <li data-check="variety">تنوع في أنواع الحروف</li>
+                            <li data-check="number">تحتوي على رقم</li>
+                            <li data-check="symbol">تحتوي على رمز خاص</li>
+                            <li data-check="unique">ليست كلمة شائعة أو سهلة التخمين</li>
+                        </ul>
+                    </div>
+
+                    <div class="password-tips">
+                        <h3>نصائح مهمة</h3>
+                        <p>استخدم كلمة مرور مختلفة لكل حساب.</p>
+                        <p>استخدم مدير كلمات مرور موثوقًا لإنشاء كلمات مرور طويلة وفريدة.</p>
+                        <p>فعّل المصادقة الثنائية متى كانت متاحة.</p>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- FACT CHECK -->
+        <section class="page" id="factcheck">
+            <div class="container">
+
+                <div class="page-heading">
+                    <span class="section-tag">فكر قبل أن تشارك</span>
+                    <h1>قائمة التحقق من الأخبار</h1>
+                    <p>
+                        قبل تصديق أي خبر أو مشاركته،
+                        تأكد من المرور على هذه الخطوات.
+                    </p>
+                </div>
+
+                <div class="fact-card">
+
+                    <div class="fact-card-heading">
+                        <span class="feature-icon">◎</span>
+                        <h2>هل الخبر موثوق؟</h2>
+                        <p>حدد الخطوات التي قمت بها للتحقق من صحة الخبر.</p>
+                    </div>
+
+                    <div class="fact-check">
+
+                        <label>
+                            <input type="checkbox">
+                            <span>تحققت من مصدر الخبر وموثوقيته.</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>تأكدت من تاريخ نشر الخبر.</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>بحثت عن الخبر في مصادر أخرى مستقلة.</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>تحققت من الصور والفيديوهات المرفقة.</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>قرأت الخبر كاملًا ولم أعتمد على العنوان فقط.</span>
+                        </label>
+
+                        <label>
+                            <input type="checkbox">
+                            <span>تأكدت من وجود أدلة تدعم المعلومات.</span>
+                        </label>
+
+                    </div>
+
+                    <div class="fact-progress-section">
+                        <div class="fact-progress-header">
+                            <span>مستوى التحقق</span>
+                            <strong id="factProgressText">0 / 6</strong>
+                        </div>
+
+                        <div
+                            class="progress-track"
+                            role="progressbar"
+                            aria-label="خطوات التحقق المكتملة"
+                            aria-valuemin="0"
+                            aria-valuemax="6"
+                            aria-valuenow="0"
+                            id="factProgressTrack"
+                        >
+                            <div class="progress-bar" id="factProgress"></div>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-secondary" id="factReset" type="button">
+                        إعادة تعيين القائمة
+                    </button>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <h2>وَعْي | WA3Y</h2>
+                    <p>نحو مجتمع رقمي أكثر وعيًا وأمانًا.</p>
+                </div>
+
+                <div class="footer-note">
+                    <p>الوعي الرقمي ليس خيارًا، بل ضرورة.</p>
+                    <span>© 2026 WA3Y. جميع الحقوق محفوظة.</span>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+
+    <script src="js/app.js" defer></script>
+
+</body>
+</html>
